@@ -8,7 +8,7 @@
     "hostname": "croc-hunter.xploremachinez.net"
   },
   "container_repo": {
-    "host": "registry.docker.io",
+    "host": "hub.docker.com",
     "master_acct": "wieldygear",
     "alt_acct": "wieldygear",
     "jenkins_creds_id": "dockerhub_creds",
