@@ -1,17 +1,17 @@
 {
   "app": {
     "name": "croc-hunter",
-    "replicas": "3",
+    "replicas": "2",
     "cpu": "10m",
     "memory": "128Mi",
     "test": true,
-    "hostname": "croc-hunter.acs.az.estrado.io"
+    "hostname": "croc-hunter.xploremachinez.net"
   },
   "container_repo": {
-    "host": "quay.io",
-    "master_acct": "lachie83",
-    "alt_acct": "lachie83",
-    "jenkins_creds_id": "quay_creds",
+    "host": "registry.hub.docker.com",
+    "master_acct": "wieldygear",
+    "alt_acct": "wieldygear@gmail.com",
+    "jenkins_creds_id": "dockerhub_creds",
     "repo": "croc-hunter",
     "dockeremail": ".",
     "dockerfile": "./",
@@ -21,7 +21,7 @@
       "enabled": true,
       "debug": false,
       "library": {
-        "branch": "dev"
+        "branch": "master"
       }
   }
 }
