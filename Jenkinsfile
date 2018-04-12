@@ -25,7 +25,7 @@ volumes:[
 
     checkout scm
       
-    println "env.BRANCH_NAME"
+    sh "echo $BRANCH_NAME"
 
     // read in required jenkins workflow config values
     def inputFile = readFile('Jenkinsfile.json')
