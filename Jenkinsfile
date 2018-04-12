@@ -25,8 +25,6 @@ volumes:[
 
     checkout scm
       
-    sh "echo $BRANCH_NAME"
-
     // read in required jenkins workflow config values
     def inputFile = readFile('Jenkinsfile.json')
     def config = new groovy.json.JsonSlurperClassic().parseText(inputFile)
