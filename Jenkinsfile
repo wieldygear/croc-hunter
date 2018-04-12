@@ -25,6 +25,10 @@ volumes:[
 
     checkout scm
       
+    def branch = env.BRANCH_NAME
+    println branch 
+     
+      
     // read in required jenkins workflow config values
     def inputFile = readFile('Jenkinsfile.json')
     def config = new groovy.json.JsonSlurperClassic().parseText(inputFile)
